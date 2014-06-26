@@ -1,0 +1,286 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+  <!ENTITY kmancala "kMancala">
+  <!ENTITY kappname "&kmancala;">
+  <!ENTITY kappversion "1.0">
+  <!ENTITY package "kdegames">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % English "INCLUDE">
+]>
+
+<book lang="&language;">
+<bookinfo>
+<title>The &kappname; Handbook</title>
+
+<authorgroup>
+<author>
+<personname>
+<firstname>Dalibor</firstname>
+<surname>Horinek</surname>
+</personname>
+<email>dal@horinek.net</email>
+</author>
+</authorgroup>
+
+<copyright>
+<year>2011</year>
+<holder>Dalibor Horinek</holder>
+</copyright>
+<legalnotice>&FDLNotice;</legalnotice>
+
+<date>2011-04-23</date>
+<releaseinfo>&kappversion;</releaseinfo>
+
+<abstract>
+<para>
+&kappname; is an count-and-capture like board game. It's in the mancala family invented by William Julius Champion Jr in 1940. This game heavily favors the starting player, who will always win the three-seed to five-seed versions with perfect play. This game is sometimes also called "Kalahari", "Kalah", "Kalaha" or "Mancala".
+</para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>kdegames</keyword>
+<keyword>game</keyword>
+<keyword>kMancala</keyword>
+<keyword>Mancala</keyword>
+<keyword>board</keyword>
+<keyword>stones</keyword>
+</keywordset>
+
+</bookinfo>
+<chapter id="introduction"><title>Introduction</title>
+<note><title>Gametype:</title><para>Board</para></note>
+<note><title>Number of possible players:</title><para>One, Two</para></note>
+
+<para>
+&kappname; is a board game in the mancala family. This is Kalah type of Mancala game is the most popular and commercially available variant of mancala in the West.
+</para>
+
+<para>
+The game requires a Kalah board and 48 seeds or counters. The board has six small pits, called houses, on each side; and a big pit, called a Kalah, store or treasury, at each end. The game is started with four seeds in each house.
+</para>
+
+</chapter>
+
+<chapter id="howto"><title>How to play</title>
+<note><title>Objective:</title><para>The object of the game is to capture more seeds than one's opponent.</para></note>
+
+<para>
+If game is started a welcome board is showed. 
+From this point you can start new game by pressing New or load saved game using Load.
+<screenshot>
+<screeninfo>Welcome board</screeninfo>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="welcome-board.png" format="PNG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Screenshot</phrase>
+  </textobject>
+</mediaobject>
+</screenshot>
+</para>
+
+<para>
+When new game is selected, player settings pop-ups. You can select Human or Computer player. When computer player is selected, you have to choose it's difficulty. 
+<screenshot>
+<screeninfo>Player settings</screeninfo>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="player-settings.png" format="PNG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Screenshot</phrase>
+  </textobject>
+</mediaobject>
+</screenshot>
+</para>
+
+<para>
+After setting players a board with 6 small pits (labeled by letters a-f) on top and bottom and 2 big pits on sides shows up. Bottom pits and the right one belongs to player 1 who is located in the right bottom corner. Top pits and the left pit belongs to player 2. Player on move is hilighted. To make a move you have to click on one of six pits of player on turn. 
+<screenshot>
+<screeninfo>New game board</screeninfo>
+<mediaobject>
+  <imageobject>
+    <imagedata fileref="new-game-board.png" format="PNG"/>
+  </imageobject>
+  <textobject>
+    <phrase>Screenshot</phrase>
+  </textobject>
+</mediaobject>
+</screenshot>
+</para>
+</chapter>
+
+<chapter id="rules_and_tips"><title>Game Rules</title> 
+
+<sect1 id="basics">
+<title>Game Basics</title>
+
+<para>To make a valid move you have to click to one of the current player's pits. There has to be at least one stone in a pit to move be valid, otherwise you can't do that move. 
+</para>
+</sect1>
+
+<sect1 id="Rules">
+<title>Game Rules</title>
+
+<para>If you make a valid move, then stones are distributed counterclockwise way one by one.</para>
+<para>If last stone is placed in your store/treasury you have an extra turn and you play again.</para>
+<para>When last stone is placed in your empty pit, now you capture stones from your opponent's opposite pit.</para>
+</sect1>
+
+</chapter>
+
+<chapter id="interface"><title>Interface Overview</title>
+
+<sect1 id="game-menu">
+<title><guimenu>Game</guimenu> Menu</title>
+
+<variablelist>
+<varlistentry>
+<term><menuchoice>
+<shortcut><keycombo action="simul">&Ctrl;<keycap>N</keycap></keycombo></shortcut>
+<guimenu>Game</guimenu><guimenuitem>New</guimenuitem>
+</menuchoice></term>
+<listitem><para>Starts a new game.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut><keycombo action="simul">&Ctrl;<keycap>O</keycap></keycombo></shortcut>
+<guimenu>Game</guimenu><guimenuitem>Load</guimenuitem>
+</menuchoice></term>
+<listitem><para>Loads saved game.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut><keycombo action="simul">&Ctrl;<keycap>O</keycap></keycombo></shortcut>
+<guimenu>Game</guimenu><guimenuitem>Load</guimenuitem>
+</menuchoice></term>
+<listitem><para>Loads saved game.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut><keycombo action="simul">&Ctrl;<keycap>Q</keycap></keycombo></shortcut>
+<guimenu>Game</guimenu><guimenuitem>Quit</guimenuitem>
+</menuchoice></term>
+<listitem><para>Quits game.</para></listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+
+<sect1 id="move-menu">
+<title><guimenu>Move</guimenu> Menu</title>
+
+<variablelist>
+<varlistentry>
+<term><menuchoice>
+<shortcut><keycombo action="simul">&Ctrl;<keycap>Z</keycap></keycombo></shortcut>
+<guimenu>Move</guimenu><guimenuitem>Undo</guimenuitem>
+</menuchoice></term>
+<listitem><para>One move back.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut><keycombo action="simul">&Ctrl; &Shift; <keycap>Z</keycap></keycombo></shortcut>
+<guimenu>Move</guimenu><guimenuitem>Redo</guimenuitem>
+</menuchoice></term>
+<listitem><para>One move forward.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut><keycap>H</keycap></shortcut>
+<guimenu>Move</guimenu><guimenuitem>Hint</guimenuitem>
+</menuchoice></term>
+<listitem><para>Suggests best move.</para></listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+
+<sect1 id="settings-menu">
+<title><guimenu>Settings</guimenu> Menu</title>
+
+<variablelist>
+<varlistentry>
+<term><menuchoice>
+<shortcut><keycombo action="simul">&Ctrl;<keycap>H</keycap></keycombo></shortcut>
+<guimenu>Settings</guimenu><guimenuitem>Show history</guimenuitem>
+</menuchoice></term>
+<listitem><para>Toggles history view.</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut><keycombo action="simul">&Ctrl; <keycap>P</keycap></keycombo></shortcut>
+<guimenu>Settings</guimenu><guimenuitem>Change players</guimenuitem>
+</menuchoice></term>
+<listitem><para>Change players.</para></listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+</chapter>
+
+<chapter id="credits">
+<title>Credits and License</title>
+
+<para>
+&kappname;
+</para>
+<para>
+Program Copyright &copy; 2011 Dalibor Horinek <email>dal@horinek.net</email>
+</para>
+
+<para>
+Documentation Copyright &copy; 2011 Dalibor Horinek <email>dal@horinek.net</email>
+</para>
+
+&underFDL;               <!-- FDL: do not remove -->
+
+<!-- Determine which license your application is licensed under,
+     and delete all the remaining licenses below:
+
+     (NOTE:  All documentation are licensed under the FDL,
+     regardless of what license the application uses) -->
+
+&underGPL;        	 <!-- GPL License -->
+</chapter>
+
+<appendix id="installation">
+<title>Installation</title>
+
+<para>
+For installation you can obtain prebuilt packages from homepage or compile it by yourself. 
+</para>
+
+<sect1 id="Compilation">
+<title>Compilation and Installation</title>
+
+<para>
+Source code can be obtained at http://www.horinek.net. To compile this application unpack the source code, cd to it and follow instructions in INSTALL file. 
+</para>
+
+</sect1>
+</appendix>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

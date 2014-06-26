@@ -1,0 +1,5 @@
+# Code generation options for kconfig_compiler
+File=kmancala.kcfg
+ClassName=kMancalaPrefs
+Singleton=true
+Mutators=true

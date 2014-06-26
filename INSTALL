@@ -1,0 +1,22 @@
+ INSTALL 
+==========
+
+Requirements 
+-------------
+
+cmake 		-- CMake
+kdelibs5 	-- KDE Libs
+kdelibs5-dev	-- development files of KDE Libs
+libkdegames	-- KDE Games Libs
+libkdegames-dev -- development files of KDE Games Libs
+libqt4-dev 	-- development files of QT4 
+libqt4-svg	-- SVG Module 
+libqt4-xml 	-- XML Module
+
+
+Compilation 
+-------------
+
+cmake . 
+make 
+make install 

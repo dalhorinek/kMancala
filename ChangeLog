@@ -1,0 +1,20 @@
+kmancala (1.0.2)
+
+  * Fixed bug with timer and computer player 
+  * Save disabled when there is no game
+
+ -- Dalibor Horinek <dal@horinek.net>  Fri, 06 May 2011 23:37:30 +0000
+
+kmancala (1.0.1)
+
+  * Fixed bug with rendering players 
+  * Fixed Toolbar buttons enabling/disabling when needed
+  * Fixed documentation 
+
+ -- Dalibor Horinek <dal@horinek.net>  Thu, 26 Apr 2011 22:05:15 +0000
+
+kmancala (1.0b)
+
+  * Initial release
+
+ -- Dalibor Horinek <dal@horinek.net>  Tue, 26 Apr 2011 22:05:15 +0000
